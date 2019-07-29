@@ -38,7 +38,6 @@ public class ContactsPageTest extends TestBase{
 	//@Test
 	public void verifyContactsLabelTest() {
 		Assert.assertTrue(contactsPage.verifyContactLabel());
-		System.out.println("this is contacts label");
 	}
 	
 	
