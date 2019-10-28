@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.crm.qa.util;
 
 import java.io.File;
@@ -68,5 +69,3 @@ public class TestUtil extends TestBase{
 
 		
 	}
-	
-
