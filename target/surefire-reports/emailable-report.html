@@ -31,17 +31,18 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Surefire test</td><td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">75.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Free CRM App Test Cases</td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">72.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Surefire test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">com.crm.qa.testcases.ContactsPageTest</td><td><a href="#m1"><b>createNewContact</b>  </a></td><td class="numi">1</td><td>1564376324429</td><td class="numi">0</td></tr>
-<tr><th colspan="4">Surefire test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="3">com.crm.qa.testcases.LoginPageTest</td><td><a href="#m2"><b>loginButtonTest</b>  </a></td><td class="numi">1</td><td>1564376369458</td><td class="numi">299</td></tr><tr class="passedodd"><td><a href="#m3"><b>loginPageTitleTest</b>  </a></td><td class="numi">1</td><td>1564376360061</td><td class="numi">179</td></tr><tr class="passedodd"><td><a href="#m4"><b>loginTest</b>  </a></td><td class="numi">1</td><td>1564376379016</td><td class="numi">19714</td></tr>
-<tr class="passedeven"><td rowspan="1">com.crm.qa.testcases.HomePageTest</td><td><a href="#m5"><b>verifyContactLinkTest</b>  </a></td><td class="numi">1</td><td>1564376349701</td><td class="numi">2173</td></tr>
+<tr><th colspan="4">Free CRM App Test Cases &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.crm.qa.testcases.LoginPageTest</td><td><a href="#m1"><b>loginPageTitleTest</b>  </a></td><td class="numi">1</td><td>1572249188186</td><td class="numi">13</td></tr>
+<tr class="failedeven"><td rowspan="1">com.crm.qa.testcases.ContactsPageTest</td><td><a href="#m2"><b>createNewContact</b>  </a></td><td class="numi">1</td><td>1572249246309</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Free CRM App Test Cases &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">com.crm.qa.testcases.LoginPageTest</td><td><a href="#m3"><b>loginButtonTest</b>  </a></td><td class="numi">1</td><td>1572249201525</td><td class="numi">190</td></tr><tr class="passedodd"><td><a href="#m4"><b>loginTest</b>  </a></td><td class="numi">1</td><td>1572249214617</td><td class="numi">4866</td></tr>
+<tr class="passedeven"><td rowspan="1">com.crm.qa.testcases.HomePageTest</td><td><a href="#m5"><b>verifyContactLinkTest</b>  </a></td><td class="numi">1</td><td>1572249242168</td><td class="numi">2501</td></tr>
 </table>
-<h1>Surefire test</h1>
+<h1>Free CRM App Test Cases</h1>
 <h2 id="m1">com.crm.qa.testcases.ContactsPageTest:createNewContact</h2>
 <div style="padding-left:3em">
 <p>java.lang.NullPointerException</p>
@@ -63,14 +64,12 @@ org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHe
 <br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
 <br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
 <br/>at org.testng.TestNG.run(TestNG.java:1031)
-<br/>at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-<br/>at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-<br/>at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-<br/>at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-<br/>at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-<br/>at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-<br/>at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-<br/>at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+<br/>at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+<br/>at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+<br/>at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
 <br/>1 lines not shown
 <p>Caused by null</p>
 com.crm.qa.util.TestUtil.getTestData(TestUtil.java:53)
@@ -98,23 +97,28 @@ com.crm.qa.util.TestUtil.getTestData(TestUtil.java:53)
 <br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
 <br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
 <br/>at org.testng.TestNG.run(TestNG.java:1031)
-<br/>at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-<br/>at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-<br/>at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-<br/>at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-<br/>at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-<br/>at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-<br/>at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-<br/>at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+<br/>at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+<br/>at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+<br/>at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
 <br/>1 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">com.crm.qa.testcases.LoginPageTest:loginButtonTest</h2>
+<h2 id="m2">com.crm.qa.testcases.LoginPageTest:loginPageTitleTest</h2>
+<div style="padding-left:3em">
+<p>expected:&lt;Free CRM [#1 cloud software for any business large or small]&gt; but was:&lt;Free CRM [software for any Business]&gt;</p>
+junit.framework.Assert.assertEquals(Assert.java:85)
+<br/>at junit.framework.Assert.assertEquals(Assert.java:91)
+<br/>at com.crm.qa.testcases.LoginPageTest.loginPageTitleTest(LoginPageTest.java:40)
+<br/>28 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <h2 id="m3">com.crm.qa.testcases.LoginPageTest:loginTest</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <h2 id="m4">com.crm.qa.testcases.HomePageTest:verifyContactLinkTest</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m5">com.crm.qa.testcases.LoginPageTest:loginPageTitleTest</h2>
+<h2 id="m5">com.crm.qa.testcases.LoginPageTest:loginButtonTest</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

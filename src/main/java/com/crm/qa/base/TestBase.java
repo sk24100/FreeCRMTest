@@ -41,11 +41,11 @@ public class TestBase {
 	public static void initialization() {
 		String browserName=prop.getProperty("browser");
 		if(browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\ritik\\git\\bddframework\\BDD_Automation_Framework\\target\\test-classes\\drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\main\\resources\\drivers\\chromedriver.exe");
 			driver=new ChromeDriver();
 		}
 		else if(browserName.equals("Firefox")) {
-			System.setProperty("webdriver.gecko.driver", "C:\\Users\\ritik\\git\\bddframework\\BDD_Automation_Framework\\target\\test-classes\\drivers\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\src\\main\\resources\\drivers\\geckodriver.exe");
 			driver=new FirefoxDriver();
 		}
 		
